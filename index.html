@@ -1,0 +1,28 @@
+<!-- Creado por Daniel Domingo -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+<h1 id="Titulo">Practica Bloque 3</h1>
+
+ <!-- script javascript     -->
+<script>
+
+
+function funcion_surname() {
+  var surname = document.getElementById("apellido").value;
+  var name = document.getElementById("nombre").value;
+  alert ('Bienvenido ' + name + ' ' + surname)
+}
+
+</script>
+</head>
+
+<body >
+<h1>Eventos HTML</h1>
+Introduce tu nombre:  <input type="text" id="nombre">
+Introduce tu apellido: <input type="text" id="apellido" onblur="funcion_surname()">
+
+</body>
